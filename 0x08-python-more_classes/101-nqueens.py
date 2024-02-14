@@ -21,7 +21,7 @@ import sys
 
 
 def init_board(n):
-    """Initialize an `n`x`n` sized chessboard with zero's."""
+    """Initialize an `n`x`n` sized chessboard with 0's."""
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
@@ -103,10 +103,10 @@ def recursive_solve(board, row, queens, solutions):
     """Recursively solve an N-queens puzzle.
 
     Args:
-        board (list): The current working chessboard
-        row (int): The current working row
-        queens (int): The current number of placed queens
-        solutions (list): A list of lists of solutions
+        board (list): The current working chessboard.
+        row (int): The current working row.
+        queens (int): The current number of placed queens.
+        solutions (list): A list of lists of solutions.
     Returns:
         solutions
     """
