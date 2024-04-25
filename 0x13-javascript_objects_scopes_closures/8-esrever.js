@@ -1,7 +1,12 @@
 exports.esrever = function (list) {
-  const reveselist = [];
-  for (let i = list.length - 1; i >= 0; i--) {
-    reveselist.push(list[i]);
+  let len = list.length - 1;
+  let i = 0;
+  while ((len - i) > 0) {
+    const temp = list[len];
+    list[len] = list[i];
+    list[i] = temp;
+    i++;
+    len--;
   }
-  return reveselist;
+  return list;
 };
