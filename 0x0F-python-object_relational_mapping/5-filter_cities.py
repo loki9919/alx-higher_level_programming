@@ -15,5 +15,5 @@ if __name__ == '__main__':
                    ORDER BY cities.id ASC",(argv[4],))
     cities = [row[0] for row in cursor.fetchall()]
     print(", ".join(cities))
-cursor.close()
-db.close()
+    cursor.close()
+    db.close()
